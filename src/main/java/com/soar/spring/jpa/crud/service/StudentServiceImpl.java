@@ -39,7 +39,6 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    @Transactional
     public Student getStudent(Long id) {
         return entityManager.find(Student.class, id);
     }
